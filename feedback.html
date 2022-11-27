@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>How Can We Improve</title>
+        <link rel = "stylesheet" href = "feedback.css">
+        <script> import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"; </script>
+    </head>
+    <body>
+        <div class="menuBar">
+            <img src="images/Logo.png" width="5%" style="float: left; margin-left: 20; margin-top: 6">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Articles</a>
+            <div class="subMenu1">
+                <ul>
+                    <li><a href="#">Space Exploration</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="JWST.html">James Webb Telescope</a></li>
+                                <li><a href="#">Space Exploration - Is it a Priority</a></li>
+                                <li><a href="#">Parker Solar Probe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#">Quantum Physics</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">Particle-Wave Duality</a></li>
+                                <li><a href="#">Quantum Entanglement</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Physics and Chemistry</a>
+                        <div class="sub-menu-3">
+                            <ul>
+                                <li><a href="#">Higgs Field and Boson</a></li>
+                                <li><a href="#">String Theory</a></li>
+                                <li><a href="#">Time Dilation</a></li>
+                                <li><a href="#">Antimatter</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">The Universe</a>
+                        <div class="sub-menu-4">
+                            <ul>
+                                <li><a href="#">Black Holes and Hawking Radiation</a></li>
+                                <li><a href="#">Dark Matter and Energy</a></li>
+                                <li><a href="#">The Big Bang Theory</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <!--<li><a href="download.html">Download</a></li>-->
+        </ul>
+        </div>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="modal-wrap display-none">
+            <div class="modal">
+                <p>Thank you for your feedback</p>
+                <p>You will see the updates within the next 7 days.</p>
+                <button class="closeModal">Close</button>
+            </div>
+        </div>
+        <div class="feedbackForm">
+            <h2>Give us Feedback!</h2>
+            <p>How can we improve? Tell us by filling out the form below.</p>
+            <form class="feedbackForm">
+                <div class="contact-info">
+                    <input class="fullName" type="search" placeholder="Your Name">
+                    <input class="email-address" type="search" placeholder="Your Email">
+                </div>
+                    <input class="whatImprovement" type="search" placeholder="What can we Improve">
+                    <br>
+                    <input class="howImprovement" type="search" placeholder="How can we Improve">
+                <div class="submit-btn">
+                    <button class="submitForm" type="submit">Submit Form</button>
+                </div>
+            </form>
+    </div>
+    </body>
+</html>

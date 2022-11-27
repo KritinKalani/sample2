@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Science Magazine</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script> import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"; </script>
+        <script src="https://kit.fontawesome.com/5fde03964c.js" crossorigin="anonymous"></script>
+    </head>
+</html>
+
+<body>
+    <div class="menuBar">
+        <a href="./index.html">
+            <img src="images/logo-final.png" width="4.5%" style="float: left; margin-left: 20; margin-top: 4">
+        </a>
+    <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Articles</a>
+        <div class="subMenu1">
+            <ul>
+                <li><a href="#">Space Exploration</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="articles/JWST/JWST.html">James Webb Telescope</a></li>
+                            <li><a href="articles/Space Exploration/spaceExploration.html">Space Exploration - Is it a Priority</a></li>
+                            <li><a href="articles/Parker Solar Probe/PSP.html">Parker Solar Probe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="#">Quantum Physics</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="articles/PW Duality/PWDuality.html">Particle-Wave Duality</a></li>
+                            <li><a href="articles/Superposition and Quantum Entanglement/superposition.html">Superposition and Quantum Entanglement</a></li>
+                            <li><a href="articles/Quantum Tunneling/quantumTunneling.html">Quantum Tunneling</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Physics and Chemistry</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li><a href="articles/Higgs Field/higgs.html">Higgs Field and Boson</a></li>
+                            <li><a href="articles/String Theory/stringTheory.html">String Theory</a></li>
+                            <li><a href="articles/timeDilation/timeDilation.html">Time Dilation</a></li>
+                            <li><a href="articles/Antimatter/antimatter.html">Antimatter</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">The Universe</a>
+                    <div class="sub-menu-4">
+                        <ul>
+                            <li><a href="articles/Hawking Radiation/hawkingRadiation.html">Black Holes and Hawking Radiation</a></li>
+                            <li><a href="articles/Dark Matter/darkMatter.html">Dark Matter</a></li>
+                            <li><a href="articles/Dark Energy/darkEnergy.html">Dark Energy</a></li>
+                            <li><a href="articles/The Big Bang Theory/bbt.html">The Big Bang Theory</a></li>
+                        </ul>
+                    </div>
+            </ul>
+        </div>
+        </li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <!--<li><a href="download.html">Download</a></li>-->
+    </ul>
+    </div>
+    <img src="images/front-page.png" width=100% height=100%>
+    <div class="sections">
+    <div class="spaceExploration">
+        Space Exploration
+    </div>
+    <div class="seImages">
+        <a href="articles/JWST/JWST.html">
+            <img class="seImages1" src="images/JWST.jpg">
+            <p>James Webb Space Telescope</p>
+        </a>
+        <a href="articles/Space Exploration/spaceExploration.html">
+            <img class="seImages2" src="images/Priority.jpg">
+            <p style="margin-left: 505px">Space Exploration</p>
+        </a>
+        <a href="articles/Parker Solar Probe/PSP.html">
+            <img class="seImages3" src="images/PSP.jpg">
+            <p style="margin-left: 980px">Parker Solar Probe</p>
+        </a>
+    </div>
+    <!--<div class="seImages">
+    <div class="seImages1">
+        <a href="articles/JWST/JWST.html">
+        <img src="images/JWST.jpg" width="20%" height="30%" alt="James Webb Space Telescope" title="JWST">
+        <div class="name">James Webb Telescope</div>
+    </div>
+    <div class="seImages2">
+        <a href="articles/JWST/JWST.html"></a>
+        <img src="images/Priority.jpg" width="20%" height="30%" alt="Space Exploration - Is it a Priority" title="Space Exploration - Is it a Priority">
+        <div class="name">Space Exploration - Is it a Priority</div>
+    </div>
+    <div class="seImages3">
+        <a href="articles/JWST/JWST.html"></a>
+        <img src="images/PSP.jpg" width="20%" height="30%" alt="Parker Solar Probe" title="Parker Solar Probe">
+        <div class="name">Parker Solar Probe</div>
+    </div>
+    </div>-->
+
+    <div class="quantumPhysics">
+        Quantum Physics
+    </div>
+    <div class="qpImages">
+        <a href="articles/PW Duality/PWDuality.html">
+            <img class="qpImages1" src="images/PW-Duality.jpg">
+            <p>Particle-Wave Duality</p>
+        </a>
+        <a href="articles/Quantum Tunneling/quantumTunneling.html">
+            <img class="qpImg2" src="images/QT.jpg">
+            <p style="margin-left: 720px">Quantum Tunnelling</p>
+        </a>
+        <!--<a>
+            <img class="qpImg3" src="images/Mercury.jpg">
+            <p>Superposition and Quantum Entanglement</p>
+        </a>-->
+    </div>
+    <div class="physicsAndChem">
+        Physics and Chemistry
+    </div>
+    <div class="pcImages">
+        <a href="articles/Higgs Field/higgs.html">
+            <img class="pcImages1" src="images/higgs-field.jpg">
+            <p>Higgs Field and Boson</p>
+        </a>
+        <a href="articles/String Theory/stringTheory.html">
+            <img class="pcImages2" src="images/string-theory.jpg">
+            <p style="margin-left: 375px;">String Theory</p>
+        </a>
+        <a href="articles/timeDilation/timeDilation.html">
+            <img class="pcImages3" src="images/TimeDilation.jpg">
+            <p style="margin-left: 725px;">Time Dilation</p>
+        </a>
+        <a href="articles/Antimatter/antimatter.html">
+            <img class="pcImages4" src="images/Antimatter.avif">
+            <p  style="margin-left: 1070px;">Antimatter</p>
+        </a>
+    </div>
+    <div class="theUniverse">
+        The Universe
+    </div>
+    <div class="tuImages">
+        <a href="articles/The Big Bang Theory/bbt.html">
+        <img class="tuImg1" src="images/bbt.webp">
+        <p>The Big Bang Theory</p>
+    </a>
+    <a href="articles/Dark Matter/darkMatter.html">
+        <img class="tuImg2" src="images/DarkMatter.jpg">
+        <p  style="margin-left: 505;">Dark Matter</p>
+    </a>
+    <a href="articles/Hawking Radiation/hawkingRadiation.html">
+        <img class="tuImg3" src="images/HawkingRadiation.jpg">
+        <p  style="margin-left: 980px;">Black Holes and Hawking Radiation</p>
+    </a>
+    </div>
+</div>
+<p class="more">Check the 'Articles' page for more articles about these intriguing topics...</p>
+
+<br>
+<br>
+<br>
+<div class="footer">
+    <div class="col-1">
+        <h3>Useful Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+    <div class="col-2">
+        <h3>Contact Us</h3>
+        <div class="footer-email">
+            <i class="fa-thin fa-envelope"></i>
+            <p>Email ID: <br> _______@______.com</p>
+        </div>
+        <div class="footer-phone">
+            <i class="fa-thin fa-phone"></i>
+            <p>Phone Number: <br> +01 12345 67890</p>
+        </div>
+    </div>
+</div>
+</body>
+
+
+        <!--<p> <a href="articles/JWST/JWST.html">
+                <img src="images/JWST.jpg" width="20%" height="30%" alt="James Webb Space Telescope" title="JWST">
+            </p>-->
+        
+        <!--<a>
+            <img src="images/Priority.jpg" width="20%" height="30%" alt="Space Exploration - Priority or not?">
+            <p>Priority</p>
+        </a>
+        <a>
+            <img src="images/PSP.jpg" width="20%" height="30%" alt="Parker Solar Probe">
+            <p>PSP</p>
+        </a>-->
